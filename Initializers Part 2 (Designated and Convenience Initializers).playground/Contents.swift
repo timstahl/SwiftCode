@@ -13,4 +13,10 @@ class BlogPost {
     var numberOfComments = 0
 }
 
-let newPostObject = BlogPost()
+let post = BlogPost()
+post.title = "A Very Big Mouse"
+
+//Check if there's a value inside the optional first
+if let actualTitle = post.title {
+    print(actualTitle)
+}
